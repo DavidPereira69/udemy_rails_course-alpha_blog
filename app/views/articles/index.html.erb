@@ -1,0 +1,17 @@
+<h1>Your Articles</h1>
+<p><%= link_to 'Create New Article', new_article_path %></p>
+<table class="table table-bordered table-hover" width="450">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th></th><th></th>
+  </tr>
+  <% @articles.each do |article| %>
+  <tr>
+    <td><%= article.title %></td>
+    <td><%= article.description %></td>
+    <td align="right"><%= link_to 'edit', edit_article_path(article) %></td>
+    <td align="left"><%= link_to 'show', article_path(article) %></td>
+  </tr>
+  <% end %>
+</table>
