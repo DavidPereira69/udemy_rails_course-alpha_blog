@@ -11,11 +11,6 @@ class ArticlesController < ApplicationController
     @article = Article.new
   end
   
-  def edit
-    #@article = Article.find(params[:id])
-  end
-  
-  
   def create
     #render plain: params[:article].inspect #to display the hash/passed variables of the form in browser
     @article = Article.new(article_params)
@@ -27,6 +22,10 @@ class ArticlesController < ApplicationController
       render 'new'
     end
     
+  end
+  
+  def edit
+    #@article = Article.find(params[:id])
   end
   
   def update
