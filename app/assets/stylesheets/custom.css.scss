@@ -1,2 +1,67 @@
+$navbar-default-bg: #5b0e0e;
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {background: #5b0e0e;}
+
+#logo {
+    float:left;
+    font-size: 1.7em;
+    color: #e8e3f0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+#logo:hover{
+    color:#fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #e8e3f0;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #fff;
+}
+.jumbotron-home {
+    background-image: asset-url('bg_jumbotron-01.jpg');
+    background-size: cover;
+    height: 450px;
+    background-color: #937db6;
+}
+.jumbotron-home h1, .jumbotron-home .h1 {
+    color: #fff;
+    text-shadow: 1.25px 1.75px #5b5446;
+}
+.jumbotron-home p {
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 1.25px 1.75px #5b5446;
+}
+.jumbotron .btn-xlg {
+    font-size: 28px;
+    float: right;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 30px;
+    color: #fff;
+    background-color: #000;
+}

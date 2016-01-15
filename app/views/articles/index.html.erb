@@ -1,20 +1,22 @@
-<h1>Your Articles</h1>
-<p><%= link_to 'Create New Article', new_article_path %></p>
-<table class="table table-bordered table-hover" width="450">
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  <% @articles.each do |article| %>
-  <tr>
-    <td><%= article.title %></td>
-    <td style="white-space: pre-wrap;"><%= article.description %></td>
-    <td><%= link_to 'view', article_path(article) %></td>
-    <td><%= link_to 'edit', edit_article_path(article) %></td>
-    <td><%= link_to 'delete', article_path(article), method: :delete, data: {confirm: "You are about to delete this article. Are you sure you wish to continue?"} %></td>
-  </tr>
-  <% end %>
-</table>
+<div class="jumbotron">
+  <h1>Your Articles</h1>
+  <p><%= link_to 'Create New Article', new_article_path %></p>
+  <table class="table table-bordered table-hover" width="450">
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td style="white-space: pre-wrap;"><%= article.description %></td>
+      <td><%= link_to 'view', article_path(article) %></td>
+      <td><%= link_to 'edit', edit_article_path(article) %></td>
+      <td><%= link_to 'delete', article_path(article), method: :delete, data: {confirm: "You are about to delete this article. Are you sure you wish to continue?"} %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
