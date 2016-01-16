@@ -1,5 +1,5 @@
 $navbar-default-bg: #5b0e0e;
-
+$navbar-default-border: #5b0e0e;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -8,11 +8,8 @@ body {background: #5b0e0e;}
 
 #logo {
     float:left;
-    font-size: 1.7em;
-    color: #e8e3f0;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    font-weight: bold;
+    margin-top: -7px;
+    margin-bottom: 5px;
 }
 #logo:hover{
     color:#fff;
